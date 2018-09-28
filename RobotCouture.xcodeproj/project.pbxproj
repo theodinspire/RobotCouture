@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		438BB66974269D39131B3E60 /* Pods_RobotCouture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C399457683C6E6BACD182C21 /* Pods_RobotCouture.framework */; };
 		A0B5D8EA215EA88D0011E006 /* RobotCouture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B5D8E0215EA88C0011E006 /* RobotCouture.framework */; };
 		A0B5D8EF215EA88D0011E006 /* RobotCoutureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B5D8EE215EA88D0011E006 /* RobotCoutureTests.swift */; };
 		A0B5D8F1215EA88D0011E006 /* RobotCouture.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B5D8E3215EA88C0011E006 /* RobotCouture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9F6DAC9D959980D2A7EF5D0 /* Pods_RobotCoutureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDE30D96C97EBBEE32FA000 /* Pods_RobotCoutureTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4EDE30D96C97EBBEE32FA000 /* Pods_RobotCoutureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RobotCoutureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA7E95A875CF3C24BF0CA37 /* Pods-RobotCoutureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobotCoutureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RobotCoutureTests/Pods-RobotCoutureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		74C6D8E96DB3ECE9A7ACA2DF /* Pods-RobotCouture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobotCouture.release.xcconfig"; path = "Pods/Target Support Files/Pods-RobotCouture/Pods-RobotCouture.release.xcconfig"; sourceTree = "<group>"; };
+		884A39E9EE1EE5CBDEC26478 /* Pods-RobotCoutureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobotCoutureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RobotCoutureTests/Pods-RobotCoutureTests.release.xcconfig"; sourceTree = "<group>"; };
+		926AE2CF97C30667D1A934D0 /* Pods-RobotCouture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobotCouture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RobotCouture/Pods-RobotCouture.debug.xcconfig"; sourceTree = "<group>"; };
 		A0B5D8E0215EA88C0011E006 /* RobotCouture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RobotCouture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B5D8E3215EA88C0011E006 /* RobotCouture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RobotCouture.h; sourceTree = "<group>"; };
 		A0B5D8E4215EA88C0011E006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0B5D8E9215EA88D0011E006 /* RobotCoutureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotCoutureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B5D8EE215EA88D0011E006 /* RobotCoutureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotCoutureTests.swift; sourceTree = "<group>"; };
 		A0B5D8F0215EA88D0011E006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C399457683C6E6BACD182C21 /* Pods_RobotCouture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RobotCouture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438BB66974269D39131B3E60 /* Pods_RobotCouture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +53,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B5D8EA215EA88D0011E006 /* RobotCouture.framework in Frameworks */,
+				B9F6DAC9D959980D2A7EF5D0 /* Pods_RobotCoutureTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75C05A367EB9FAF764BB4AB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				926AE2CF97C30667D1A934D0 /* Pods-RobotCouture.debug.xcconfig */,
+				74C6D8E96DB3ECE9A7ACA2DF /* Pods-RobotCouture.release.xcconfig */,
+				6DA7E95A875CF3C24BF0CA37 /* Pods-RobotCoutureTests.debug.xcconfig */,
+				884A39E9EE1EE5CBDEC26478 /* Pods-RobotCoutureTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EA5FAB739C00406E4C6EBA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C399457683C6E6BACD182C21 /* Pods_RobotCouture.framework */,
+				4EDE30D96C97EBBEE32FA000 /* Pods_RobotCoutureTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0B5D8D6215EA88C0011E006 = {
 			isa = PBXGroup;
 			children = (
 				A0B5D8E2215EA88C0011E006 /* RobotCouture */,
 				A0B5D8ED215EA88D0011E006 /* RobotCoutureTests */,
 				A0B5D8E1215EA88C0011E006 /* Products */,
+				75C05A367EB9FAF764BB4AB7 /* Pods */,
+				9EA5FAB739C00406E4C6EBA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +136,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0B5D8F4215EA88D0011E006 /* Build configuration list for PBXNativeTarget "RobotCouture" */;
 			buildPhases = (
+				B9281D8DEC1D34D918FE5B24 /* [CP] Check Pods Manifest.lock */,
 				A0B5D8DB215EA88C0011E006 /* Headers */,
 				A0B5D8DC215EA88C0011E006 /* Sources */,
 				A0B5D8DD215EA88C0011E006 /* Frameworks */,
@@ -122,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0B5D8F7215EA88D0011E006 /* Build configuration list for PBXNativeTarget "RobotCoutureTests" */;
 			buildPhases = (
+				E77EA813A93426921A45585F /* [CP] Check Pods Manifest.lock */,
 				A0B5D8E5215EA88D0011E006 /* Sources */,
 				A0B5D8E6215EA88D0011E006 /* Frameworks */,
 				A0B5D8E7215EA88D0011E006 /* Resources */,
+				85642811E46A589100B02A4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +223,77 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85642811E46A589100B02A4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RobotCoutureTests/Pods-RobotCoutureTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FeedKit/FeedKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FeedKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RobotCoutureTests/Pods-RobotCoutureTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9281D8DEC1D34D918FE5B24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RobotCouture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E77EA813A93426921A45585F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RobotCoutureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0B5D8DC215EA88C0011E006 /* Sources */ = {
@@ -339,6 +445,7 @@
 		};
 		A0B5D8F5215EA88D0011E006 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 926AE2CF97C30667D1A934D0 /* Pods-RobotCouture.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +472,7 @@
 		};
 		A0B5D8F6215EA88D0011E006 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74C6D8E96DB3ECE9A7ACA2DF /* Pods-RobotCouture.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -391,6 +499,7 @@
 		};
 		A0B5D8F8215EA88D0011E006 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DA7E95A875CF3C24BF0CA37 /* Pods-RobotCoutureTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -409,6 +518,7 @@
 		};
 		A0B5D8F9215EA88D0011E006 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 884A39E9EE1EE5CBDEC26478 /* Pods-RobotCoutureTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

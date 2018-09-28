@@ -6,6 +6,8 @@ target 'RobotCouture' do
   use_frameworks!
 
   # Pods for RobotCouture
+  pod 'SwiftSoup', '~> 1.7.4'
+  pod 'FeedKit', '~> 8.0.0'
 
   target 'RobotCoutureTests' do
     inherit! :search_paths
