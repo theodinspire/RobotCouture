@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:RobotCouture.playground">
+   </FileRef>
+   <FileRef
       location = "group:RobotCouture.xcodeproj">
    </FileRef>
    <FileRef
