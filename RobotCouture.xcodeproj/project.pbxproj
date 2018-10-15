@@ -12,6 +12,7 @@
 		A0B5D8EA215EA88D0011E006 /* RobotCouture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B5D8E0215EA88C0011E006 /* RobotCouture.framework */; };
 		A0B5D8EF215EA88D0011E006 /* RobotCoutureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B5D8EE215EA88D0011E006 /* RobotCoutureTests.swift */; };
 		A0B5D8F1215EA88D0011E006 /* RobotCouture.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B5D8E3215EA88C0011E006 /* RobotCouture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0E78FE5217531180025CD35 /* DateFormatter+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78FE4217531180025CD35 /* DateFormatter+Default.swift */; };
 		B9F6DAC9D959980D2A7EF5D0 /* Pods_RobotCoutureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDE30D96C97EBBEE32FA000 /* Pods_RobotCoutureTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		A0B5D8E9215EA88D0011E006 /* RobotCoutureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotCoutureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B5D8EE215EA88D0011E006 /* RobotCoutureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotCoutureTests.swift; sourceTree = "<group>"; };
 		A0B5D8F0215EA88D0011E006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E78FE4217531180025CD35 /* DateFormatter+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Default.swift"; sourceTree = "<group>"; };
 		C399457683C6E6BACD182C21 /* Pods_RobotCouture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RobotCouture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 		A0B5D8E2215EA88C0011E006 /* RobotCouture */ = {
 			isa = PBXGroup;
 			children = (
+				A0E78FE3217530F80025CD35 /* Extensions */,
 				A0390ACB215EAA6600E439E4 /* Models */,
 				A0B5D8E3215EA88C0011E006 /* RobotCouture.h */,
 				A0B5D8E4215EA88C0011E006 /* Info.plist */,
@@ -127,6 +130,14 @@
 				A0B5D8F0215EA88D0011E006 /* Info.plist */,
 			);
 			path = RobotCoutureTests;
+			sourceTree = "<group>";
+		};
+		A0E78FE3217530F80025CD35 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0E78FE4217531180025CD35 /* DateFormatter+Default.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E78FE5217531180025CD35 /* DateFormatter+Default.swift in Sources */,
 				A0390ACD215EAAB100E439E4 /* ImageDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,7 +529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6DA7E95A875CF3C24BF0CA37 /* Pods-RobotCoutureTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MP2C6DY4C6;
@@ -537,7 +549,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 884A39E9EE1EE5CBDEC26478 /* Pods-RobotCoutureTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = MP2C6DY4C6;
