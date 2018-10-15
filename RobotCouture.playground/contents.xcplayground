@@ -4,5 +4,6 @@
         <page name='RSS'/>
         <page name='ArchiveInvestigation'/>
         <page name='PageParsing'/>
+        <page name='BasicDatastore'/>
     </pages>
 </playground>
