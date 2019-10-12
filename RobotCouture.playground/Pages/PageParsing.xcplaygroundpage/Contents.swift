@@ -18,8 +18,6 @@ do {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "EEEE, MMMM d, yyyy"
 
-    //    print(try post.getElementsByClass("date-post").first()?.text())
-
     let dateString = try post.getElementsByClass("date-post").first()?.text() ?? ""
 
     let date = dateFormatter.date(from: dateString)
@@ -30,7 +28,6 @@ do {
 
     let splitter: (String) -> String = { $0.split(separator: "-").suffix(from: 1).joined(separator: " ") }
 
-    //    "category-men".split(separator: "-").suffix(from: 1).joined(separator: " ")
     let categories = classes.filter { $0.hasPrefix("category") }.map(splitter)
     let tags = classes.filter { $0.hasPrefix("tag") }.map(splitter)
 

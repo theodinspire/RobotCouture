@@ -27,3 +27,42 @@ public struct ImageDetails: Codable {
         self.tags = tags
     }
 }
+
+import SwiftSoup
+
+public extension ImageDetails {
+    static func from(url: URL) -> [ImageDetails]? {
+
+        do {
+            let document = try SwiftSoup.parse(try String(contentsOf: url, encoding: .ascii))
+            let title = try document.title()
+
+            guard let post = try document.getElementsByClass("post").first() else {
+                print("Could not find post at \(url.absoluteString). Ending parse.")
+                return nil
+            }
+
+            guard let dateString = try post.getElementsByClass("date-post").first()?.text(),
+                let date = DateFormatter.default.date(from: dateString) else {
+                    print("Could not porse post date. Ending parse.")
+                    return nil
+            }
+
+            let classes = try post.classNames()
+            let splitter: (String) -> String = { $0.split(separator: "-").suffix(from: 1).joined(separator: " ") }
+
+            let categories = classes.filter { $0.hasPrefix("category") }.map(splitter)
+            let tags = classes.filter { $0.hasPrefix("tag") }.map(splitter)
+
+            let imageSources = try post.getElementsByClass("article-content").first()?.getElementsByTag("img").map { try $0.attr("src") } ?? []
+
+            return imageSources.compactMap(URL.init).map {
+                ImageDetails(url: $0, postUrl: url, postTitle: title, postDate: date, categories: categories, tags: tags)
+            }
+        } catch {
+            print(error)
+        }
+
+        return nil
+    }
+}

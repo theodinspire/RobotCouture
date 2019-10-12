@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension DateFormatter {
+public extension DateFormatter {
     static let `default` = DateFormatter(fromFormatString: "EEEE, MMMM d, yyyy")
 
     convenience init(fromFormatString string: String) {
